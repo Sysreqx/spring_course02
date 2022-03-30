@@ -11,7 +11,10 @@ public class ConfigurationWithAnnotation {
 //        cat.sayPet();
 
         Person person = context.getBean("personBean", Person.class);
+
         person.sayHello();
+        System.out.println(person.getName());
+        System.out.println(person.getAge());
 
         context.close();
     }
