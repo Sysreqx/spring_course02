@@ -2,11 +2,12 @@ package spring_introduction;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("catBean")
 public class Cat implements Pet{
 
     @Override
     public void sayPet() {
+        System.out.println("Cat bean: constructor without parameters");
         System.out.println("Meow");
     }
 
