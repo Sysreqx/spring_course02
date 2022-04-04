@@ -10,6 +10,8 @@ public class Test1 {
 
         Library library = context.getBean("libraryBean", Library.class);
         library.getBook();
+        library.getMagazine();
+        library.addBook();
 
         context.close();
     }
