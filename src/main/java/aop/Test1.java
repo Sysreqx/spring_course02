@@ -9,9 +9,9 @@ public class Test1 {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
 
         Library library = context.getBean("libraryBean", Library.class);
+        Book book = context.getBean("book", Book.class);
+
         library.getBook();
-        library.getMagazine();
-        library.addBook();
 
         context.close();
     }
